@@ -9,9 +9,232 @@
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,600,700,800' rel='stylesheet' type='text/css' />
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700' rel='stylesheet' type='text/css' />
 </head>
-<body>
-    <div class="container-fluid">Welcome to my Portfolio</div>
-    <div><p>Changes are on!</p></div>
+<style>
+    body {
+      background-color: #313131;
+      font-family: "Raleway", sans-serif;
+    }
+    .white-text {
+      color: ghostwhite;
+    }
+    .text-center: {
+      text-align: center;
+    }
+    .thousandwidth {
+      max-width: 1000px;
+    }
+    nav.sitenav{
+      background-color: #eeedf0;
+    }
+    nav.sitenav a {
+      letter-spacing: 1px;
+    }
+    .sitenav a.navbar-brand {
+      color: #262626;
+      font-weight: bold;
+      color:  teal;
+    }
+    .sitenav .nav .active a, .sitenav .nav .active a:hover {
+      background-color: white;
+      color: teal;
+      font-weight: bold;
+    }
+    #about {
+      margin-top: 6em;
+    }
+    .section-padding {
+      padding-top: 4em;
+      padding-bottom: 4em;
+    }
+    #about .newbox {
+      max-width: 400px;
+      height: 100%;
+      padding-bottom: 1em;
+    }
+    #about img{
+      height: 12em;
+    }
+    hr.straight-line {
+      border: 1px solid #eeedfe;
+      max-width: 500px;
+      color: teal;
+    }
+    hr.straight-line::after {
+      background-color: #313131;
+      content: "</>";
+      font-size: 2.4em;
+      font-weight: bold;
+      padding: 0 0.4em;
+      position: relative;
+      top: -27px;
+    }
+    .descbox {
+      font-size: 1.2em;
+      padding: 15px;
+      text-align: justify;
+      letter-spacing: 1px;
+    }
+    #portfolio {
+      background-color: #262626;
+    }
+    .portfolio-box > p, .contactbox > p {
+      padding: 0 0 1em;
+    }
+    .portfolio-box hr.straight-line:after {
+      background-color: #262626;
+    }
+    .holderbox {
+      border: 1px solid #eeedfe;
+      margin: 2.5em 0 0;
+      padding: 5px;
+    }
+    label {
+      color: ghostwhite;
+    }
+    .getintouch {
+      line-height: 3em;
+    }
+    .web-btn {
+      text-align:center;
+      margin: 1.5em 0 2.5em;
+    }
+    .web-btn a {
+      padding: 1em;
+    }
+    .web-btn .github, .web-btn .codepen {
+      color: black;
+    }
+    .web-btn img {
+      max-width: 56px;
+      height: 100%;
+      vertical-align: top;
+    }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top sitenav">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" class="navbar-toggle" data-target="#portfolio-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <a class="navbar-brand" href="#">Rakesh Kumar</a>
+          </div>
+          <div id="portfolio-navbar" class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#about">ABOUT</a></li>
+              <li><a href="#portfolio">PORTFOLIO</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<section id="about" class="container-fluid section-padding">
+  <div class="newbox center-block white-text text-center">
+    <div><img class="img-circle center-block" src="https://avatars.githubusercontent.com/u/20543364?v=3" alt="Rakesh Kumar Frontent Developer"/></div>
+    <h2>Rakesh Kumar</h2>
+    <h4 class="text-uppercase">FRONT-END Web DEVELOPER</h4>
+  </div>
+  <hr class="straight-line text-center" />
+  <div class="descbox center-block white-text thousandwidth">
+    <p>Hi, I'm Rakesh, a front-end developer. I write codes. I believe in clean coding.</p>
+    <p>I work hard to write good, reliable and maintainable code. I don't think I'm best but I try my best to write better codes. I always keep learning to enhance my skills. PHP, Javascript, CSS, Bootstrap are my basic skills.
+    </p>
+  </div>
+</section>
+<section id="portfolio" class="container-fluid section-padding">
+  <div class="portfolio-box center-block thousandwidth">
+    <p class="lead white-text text-capitalize text-center">Portfolio</p>
+    <hr class="straight-line text-center" />
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="holderbox">
+          <img class="img-responsive center-block" alt="placeholder" src="images/placeholder.png" />
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="holderbox">
+          <img class="img-responsive center-block" alt="placeholder" src="images/placeholder.png" />
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="holderbox">
+          <img class="img-responsive center-block" alt="placeholder" src="images/placeholder.png" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="holderbox">
+          <img class="img-responsive center-block" alt="placeholder" src="images/placeholder.png" />
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="holderbox">
+          <img class="img-responsive center-block" alt="placeholder" src="images/placeholder.png" />
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="holderbox">
+          <img class="img-responsive center-block" alt="placeholder" src="images/placeholder.png" />
+        </div>
+      </div>
+    </div>    
+  </div>
+</section>
+<section id="contact" class="container-fluid section-padding">
+  <div class="contactbox center-block thousandwidth">
+    <p class="lead white-text text-capitalize text-center">Contact me</p>
+    <hr class="straight-line text-center" />
+    <div class="row">
+      <div class="col-md-6"><p class="white-text lead text-center getintouch">Want to get in touch with me.<br /> Awesome ! 
+        <br />just feel free to drop me a line anytime.</p></div>
+      <div class="col-md-6">
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="name">Name</label><input type="text" placeholder="Name" class="form-control" id="name" name="name" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="email">E-mail</label><input type="text" placeholder="E-mail" class="form-control" id="email" name="email" />
+              </div>
+            </div>            
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="message">Message</label><textarea name="message" id="message" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group"><button class="btn btn-primary" type="submit">Send</button>
+              </div>
+            </div>
+          </div>
+        </form>        
+      </div>
+    </div>
+    <div class="web-btn"><p class="lead white-text text-capitalize text-center">Find me on web</p>
+      <p>
+        <a href="https://www.linkedin.com/in/rakesh-kumar-535009110" class="linkedin" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/240px-LinkedIn_logo_initials.png" alt=""/></a>
+        <a href="https://github.com/infinitasweb" class="github" target="_blank"><i class="fa fa-github-square fa-4x fa-inverse"></i></a>
+        <a href="http://codepen.io/infinitasweb/" class="codepen" target="_blank"><i class="fa fa-codepen fa-4x fa-inverse"></i></a>
+        <a href="http://stackoverflow.com/users/6105813/rakesh-kumar" class="stackoverflow" target="_blank"><img src="http://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png" alt="" /></a>
+        <a href="https://www.freecodecamp.com/infinitasweb" class="fcc" target="_blank"><img src="https://pbs.twimg.com/profile_images/692531829287567360/ytP7U362.png" alt=""/></a>
+      </p>      
+    </div>
+    <div><p class="text-center white-text">&copy;Rakesh 2016 | All rights reserved</p></div>
+  </div>
+</section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </body>

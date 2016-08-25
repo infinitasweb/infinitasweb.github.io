@@ -1,1 +1,1 @@
-My Test File
+<?php echo 'success'; ?>
